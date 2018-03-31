@@ -1,0 +1,32 @@
+
+#banner{
+    text-align: center;
+    background-image: url("../img/header.png");
+    background-size: cover;
+    padding: 150px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #5FA3CC;
+}
+#banner h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+#banner p {
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 30px;
+    font-weight: lighter;
+}
+#logo {
+    margin-bottom: 96px;
+    height: 115px;
+}
+
+#botao {
+    color: #5FA3CC;
+    width: 35%;
+    margin: 45px;
+}
+
+
+
