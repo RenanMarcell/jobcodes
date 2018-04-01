@@ -13,14 +13,14 @@
         margin: 10px 5px 0 5px;
         font-size: 30px;
         color: #ffffff;
-        align-self: center;
+        text-align: center;
     }
 
     #banner p {
         margin: 0 5px 0 5px;
         font-size: 30px;
         color: #ffffff;
-        align-self: center;
+        text-align: center;
         opacity: 0.8;
     }
 
@@ -52,7 +52,7 @@
 
     .middle-row-title h4 {
         color: #3eadc1;
-        align-self: center;
+        text-align: center;
         margin-bottom: 0;
         font-size: 25px;
     }
@@ -76,6 +76,7 @@
         color: #787878;
         padding: 0;
         align-self: center;
+        text-align: center;
     }
 
 
