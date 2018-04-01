@@ -1,10 +1,6 @@
 function adicionaDados(event) {
     event.preventDefault();
-    var ip = '';
-    $.getJSON('//ipinfo.io/json', function(data) {
-      ip = JSON.parse(JSON.stringify(data, null, 2));
-      ip = ip['ip'];
-    });
+    ip = ip['ip'];
     var data = new Date();
     data = `${data.getFullYear()}-${data.getMonth()+1}-${data.getDate()} ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
     let typeLead = $('input[name=escolhaLEAD]:checked', '#form-id').val();
