@@ -117,21 +117,21 @@ body {
 }
 
 .final-row {
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    height: 350px;
 }
 
 .click-advertise {
-    display: flex;
-    width: 30%;
-    margin: 0 10px 0 10px;
+    width: 50%;
 }
 
 .click-advertise h1 {
     color: #3eadc1;
     font-weight: bold;
-    font-size: 52px;
+    font-size: 45px;
+    margin: 0 50px 0 0;
 }
 
 .rodape {
@@ -140,28 +140,59 @@ body {
     color: #fff;
     list-style: none;
 }
-  ul {
+
+.rodape ul {
     background: #565656;
     color: #fff;
     list-style: none;
-  }
+}
 
-  span{
-      color: #fff;
-  }
+.rodape span {
+    color: #fff;
+}
 
-  .icon-facebook-circled {
-      font-size: 40px;
-      color: #fff;
+.rodape .icon-facebook-circled {
+    font-size: 40px;
+    color: #fff;
+}
 
-  }
-  .icon-linkedin-circled {
-      font-size: 40px;
-      color: #fff;
-  }
-  .rede-social {
-     display: inherit;
-  }
-  .copy{
-      margin-top: 25px;
-  }
+.rodape .icon-linkedin-circled {
+    font-size: 40px;
+    color: #fff;
+}
+
+.rodape .rede-social {
+    display: inherit;
+}
+
+.rodape .copy {
+    margin-top: 25px;
+}
+
+.personal-info-and-submit {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personal-info-and-submit input {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.personal-info-and-submit button {
+    background-color: yellow;
+    color: #3eadc1;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.onSuccess {
+    color: #3eadc1;
+    margin-top: 5px;
+    display: none;
+}
