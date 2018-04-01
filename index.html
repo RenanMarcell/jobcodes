@@ -14,35 +14,37 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690439-1"></script>
     <script src="js/analytics.js"></script>
 </head>
+
 <body>
     <div id="banner">
         <img src="img/Logo.png" alt="Logo Job Codes" id="logo">
         <h1>Estamos pensando em você!</h1>
-        <p>Por que o recrutamento de desenvolvedores não é eficaz?
-        <br>Vamos melhorar isso juntos?</p>
+        <p>Por que o recrutamento de desenvolvedores de softwares não é eficaz?</p>
         <a href="#form-id">
             <button class="btn btn-light" id="botao">Vamos começar!</button>
         </a>
     </div>
     <div class="container-fluid" id="middle-container">
         <div class="row middle-row-title">
-            <h4>A Job Codes quer ouvir a sua opinião de qual seria o processo<br/></h4>
-            <h4>seletivo ideal para contratantes e candidatos a area de desenvolvimento.</h4>
+            <h4 class="text-center">A Job Codes quer ouvir a sua opinião: qual seria o processo
+                seletivo ideal para contratantes e candidatos a area de desenvolvimento.</h4>
         </div>
         <div class="row">
             <form id="form-id" onsubmit="adicionaDados(event)">
                 <div class="form-check option-display">
                     <div class="option-choice-box">
-                        <p>1 - Você é:</p>
+                        <p>1- Você é: desenvolvedor de software ou recrutador?</p>
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box-input">
-                            <input required class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A1" value="desenvolvedor" aria-label="Sou dev">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A1" value="desenvolvedor"
+                                aria-label="Sou dev">
                             <img src="img/Icon01.png" alt="Ico">
                             <h6>Desenvolvedor</h6>
                         </div>
                         <div class="choice-box-input">
-                            <input class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A2" value="recrutador" aria-label="Sou recrutador">
+                            <input class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A2" value="recrutador"
+                                aria-label="Sou recrutador">
                             <img src="img/Icon02.png" alt="Ico">
                             <h6>Recrutador</h6>
                         </div>
@@ -55,7 +57,8 @@
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box-input">
-                            <input required class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A1" value="sim" aria-label="Ja tive problemas com analise de competencia">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A1" value="sim"
+                                aria-label="Ja tive problemas com analise de competencia">
                             <h6>Sim</h6>
                         </div>
                         <div class="choice-box-input">
@@ -67,7 +70,7 @@
 
                 <div class="form-check option-display">
                     <div class="option-choice-box">
-                        <p>3 - Como você lidou ou está lidando com isso?</p>
+                        <p>3- Como você lidou com isso?</p>
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box">
@@ -78,7 +81,7 @@
 
                 <div class="form-check option-display">
                     <div class="option-choice-box">
-                        <p>4 - Em suas experiências qual método de análise de competências técnicas foi o mais efetivo?</p>
+                        <p>4 - Em suas experiências, qual método de análise de competências técnicas foi o mais efetivo?</p>
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box">
@@ -103,39 +106,46 @@
                         <h1>Agora é só clicar em enviar e terminamos!</h1>
                     </div>
                     <div class="personal-info-and-submit">
-                        <input required id="nome" class="form-check-input position-static" form="form-id" type="text" name="nome" aria-label="Inserir nome" placeholder="Nome">
-                        <input required id="email" class="form-check-input position-static" form="form-id" type="email" name="email" aria-label="Inserir email" placeholder="Email">
+                        <input required id="nome" class="form-check-input position-static" form="form-id" type="text" name="nome" aria-label="Inserir nome"
+                            placeholder="Nome">
+                        <input required id="email" class="form-check-input position-static" form="form-id" type="email" name="email" aria-label="Inserir email"
+                            placeholder="Email">
                         <button id="button-submit" class="btn btn-success position-static" form="form-id" type="submit">ENVIAR</button>
                         <h3 class="onSuccess">Formulário enviado com sucesso, obrigado por participar \o/</h3>
                     </div>
-                <div>
+                    <div>
 
-            </div>
-        </div>
+                    </div>
+                </div>
 
             </form>
         </div>
     </div>
-        <footer class="rodape justify-content-around list-inline">
-                <span class="copy">Copyright@ JobCodes 2018</span>
-                <ul class="rede-social">
-                    <li><a href="https://www.facebook.com/jobcodes/">
-                        <i class="icon-facebook-circled"></i>
-                        </a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/company/jobcodes/">
-                        <i class="icon-linkedin-circled"></i>
-                        </a>
-                    </li>
-                </ul>
+    <footer class="rodape justify-content-around list-inline">
+        <span class="copy">Copyright@ JobCodes 2018</span>
+        <ul class="rede-social">
+            <li>
+                <a href="https://www.facebook.com/jobcodes/">
+                    <i class="icon-facebook-circled"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/jobcodes/">
+                    <i class="icon-linkedin-circled"></i>
+                </a>
+            </li>
+        </ul>
         </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="js/initializeFirebase.js"></script>
     <script src="js/captureData.js"></script>
 </body>
+
 </html>

@@ -164,9 +164,10 @@
     }
 
     .personal-info-and-submit button {
-        background-color: yellow;
+        background-color: #ffcd54;
         color: #3eadc1;
         font-weight: bold;
+        border: none;
     }
 
     .onSuccess {
@@ -217,7 +218,7 @@
         text-align: center;
         background-image: url("../img/header.png");
         background-size: cover;
-        padding: 150px;
+        padding: 70px;
         color: #ffffff;
         text-shadow: 1px 1px 5px #5FA3CC;
     }
@@ -235,7 +236,7 @@
     }
 
     #logo {
-        margin-bottom: 96px;
+        margin-bottom: 49px;
         height: 115px;
     }
 
@@ -367,11 +368,12 @@
     }
 
     .personal-info-and-submit button {
-        background-color: yellow;
+        background-color: #ffcd54;
         color: #3eadc1;
         font-weight: bold;
         margin-top: 40px;
         width: 80%;
+        border: none;
     }
 
     .onSuccess {
