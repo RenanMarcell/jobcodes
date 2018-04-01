@@ -28,5 +28,108 @@
     margin: 45px;
 }
 
+body {
+    background-color: #F3F3F3;
+}
 
+#middle-container  {
+    width: 60%;
+}
 
+.middle-row-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.middle-row-title h4 {
+    color: #3eadc1;
+}
+
+#form-id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.option-display {
+    padding-left: 0;
+}
+
+.option-choice-box {
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: #E5E5E5;
+    justify-items: center;
+}
+
+.option-choice-box p {
+    margin: 0 0 0 30px;
+    color: #787878;
+    padding: 0;
+    align-self: center;
+}
+
+.option-choose-box {
+    display: flex;
+    justify-content: space-around;
+}
+.choice-box-input {
+    display: flex;
+    margin-left: 100px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.choice-box-input input {
+    margin-right: 7px;
+    align-self: center;
+}
+
+.choice-box-input img {
+    height: min-content;
+    margin-right: 7px;
+}
+
+.choice-box-input h6 {
+    margin-top: 2px;
+    margin-right: 7px;
+    color: #787878;
+    margin-bottom: 0;
+}
+
+.choice-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.choice-box textarea {
+    width: 80%;
+    height: 100px;
+}
+
+.final-row {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.click-advertise {
+    display: flex;
+    width: 30%;
+    margin: 0 10px 0 10px;
+}
+
+.click-advertise h1 {
+    color: #3eadc1;
+    font-weight: bold;
+    font-size: 52px;
+}
