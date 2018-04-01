@@ -6,60 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JobCodes</title>
+    <link rel="stylesheet" href="fontcss/fontello.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        
-    </head>
-    <body>
-    </div><div id="banner">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/hotjar.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690439-1"></script>
+    <script src="js/analytics.js"></script>
+</head>
+
+<body>
+    <div id="banner">
         <img src="img/Logo.png" alt="Logo Job Codes" id="logo">
         <h1>Estamos pensando em você!</h1>
-        <p>Por que o recrutamento de desenvolvedores não é eficaz?
-            <br>Vamos melhorar isso juntos?</p>
-        <a href="">
+        <p>Por que o recrutamento de desenvolvedores de softwares não é eficaz?</p>
+        <a href="#form-id">
             <button class="btn btn-light" id="botao">Vamos começar!</button>
         </a>
     </div>
-        <div class="container">
-            <div class="row">
-                <p>A Job Codes quer ouvir a sua opinião de qual seria o processo seletivo ideal para contratantes e candidatos a
-                    area de desenvolvimento.</p>
-            </div>
-            <div class="row">
-                <form action="">
-                    <div class="form-check">
-                        <div>
-                            <p>1- Você é:</p>
-                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+    <div class="container-fluid" id="middle-container">
+        <div class="row middle-row-title">
+            <h4 class="text-center">A Job Codes quer ouvir a sua opinião: qual seria o processo
+                seletivo ideal para contratantes e candidatos a area de desenvolvimento.</h4>
+        </div>
+        <div class="row">
+            <form id="form-id" onsubmit="adicionaDados(event)">
+                <div class="form-check option-display">
+                    <div class="option-choice-box">
+                        <p>1- Você é: desenvolvedor de software ou recrutador?</p>
+                    </div>
+                    <div class="option-choose-box">
+                        <div class="choice-box-input">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A1" value="desenvolvedor"
+                                aria-label="Sou dev">
                             <img src="img/Icon01.png" alt="Ico">
-                            <p>Desenvolvedor</p>
-                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                            <h6>Desenvolvedor</h6>
+                        </div>
+                        <div class="choice-box-input">
+                            <input class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A2" value="recrutador"
+                                aria-label="Sou recrutador">
                             <img src="img/Icon02.png" alt="Ico">
-                            <p>Recrutador</p>
+                            <h6>Recrutador</h6>
                         </div>
                     </div>
-                
-                    <div>
+                </div>
+
+                <div class="form-check option-display">
+                    <div class="option-choice-box">
                         <p>2- Você já teve problemas com análise de competências técnicas em processo seletivo de T.I?</p>
-                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                        <p>Sim</p>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                        <p>Não</p>
+                    <div class="option-choose-box">
+                        <div class="choice-box-input">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A1" value="sim"
+                                aria-label="Ja tive problemas com analise de competencia">
+                            <h6>Sim</h6>
+                        </div>
+                        <div class="choice-box-input">
+                            <input class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A2" value="nao" aria-label="Não tive problemas com analise de competencia">
+                            <h6>Não</h6>
+                        </div>
                     </div>
-            </form></div>
-            
-    
-        
-        
-    
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    
-    </body>
+                </div>
+
+                <div class="form-check option-display">
+                    <div class="option-choice-box">
+                        <p>3- Como você lidou com isso?</p>
+                    </div>
+                    <div class="option-choose-box">
+                        <div class="choice-box">
+                            <textarea required class="form-check-input position-static" form="form-id" name="problema3" id="Q3A1"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check option-display">
+                    <div class="option-choice-box">
+                        <p>4 - Em suas experiências, qual método de análise de competências técnicas foi o mais efetivo?</p>
+                    </div>
+                    <div class="option-choose-box">
+                        <div class="choice-box">
+                            <textarea required class="form-check-input position-static" form="form-id" name="problema4" id="Q4A1"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check option-display">
+                    <div class="option-choice-box">
+                        <p>5 - Qual seria a solução ideal para você?</p>
+                    </div>
+                    <div class="option-choose-box">
+                        <div class="choice-box">
+                            <textarea required form="form-id" class="form-check-input position-static" name="problema5" id="Q5A1"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row final-row">
+                    <div class="click-advertise">
+                        <h1>Agora é só clicar em enviar e terminamos!</h1>
+                    </div>
+                    <div class="personal-info-and-submit">
+                        <input required id="nome" class="form-check-input position-static" form="form-id" type="text" name="nome" aria-label="Inserir nome"
+                            placeholder=" Nome">
+                        <input required id="email" class="form-check-input position-static" form="form-id" type="email" name="email" aria-label="Inserir email"
+                            placeholder=" Email">
+                        <button id="button-submit" class="btn btn-warning position-static" form="form-id" type="submit">ENVIAR</button>
+                        <h3 class="onSuccess">Formulário enviado com sucesso, obrigado por participar \o/</h3>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer class="rodape justify-content-around list-inline">
+        <span class="copy">Copyright@ JobCodes 2018</span>
+        <ul class="rede-social">
+            <li>
+                <a href="https://www.facebook.com/jobcodes/">
+                    <i class="icon-facebook-circled"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/jobcodes/">
+                    <i class="icon-linkedin-circled"></i>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/initializeFirebase.js"></script>
+    <script src="js/captureData.js"></script>
+</body>
 </html>
