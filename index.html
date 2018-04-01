@@ -28,19 +28,19 @@
             <h4>seletivo ideal para contratantes e candidatos a area de desenvolvimento.</h4>
         </div>
         <div class="row">
-            <form id="form-id" action="">
+            <form id="form-id" onsubmit="adicionaDados(event)">
                 <div class="form-check option-display">
                     <div class="option-choice-box">
                         <p>1 - Você é:</p>
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box-input">
-                            <input required class="form-check-input position-static" type="radio" name="blankRadio" id="Q1A1" value="option1" aria-label="...">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A1" value="desenvolvedor" aria-label="Sou dev">
                             <img src="img/Icon01.png" alt="Ico">
                             <h6>Desenvolvedor</h6>
                         </div>
                         <div class="choice-box-input">
-                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="Q1A2" value="option1" aria-label="...">
+                            <input class="form-check-input position-static" form="form-id" type="radio" name="escolhaLEAD" id="Q1A2" value="recrutador" aria-label="Sou recrutador">
                             <img src="img/Icon02.png" alt="Ico">
                             <h6>Recrutador</h6>
                         </div>
@@ -53,11 +53,11 @@
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box-input">
-                            <input required class="form-check-input position-static" type="radio" name="blankRadio" id="Q2A1" value="option1" aria-label="...">
+                            <input required class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A1" value="sim" aria-label="Ja tive problemas com analise de competencia">
                             <h6>Sim</h6>
                         </div>
                         <div class="choice-box-input">
-                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="Q2A2" value="option1" aria-label="...">
+                            <input class="form-check-input position-static" form="form-id" type="radio" name="problema2" id="Q2A2" value="nao" aria-label="Não tive problemas com analise de competencia">
                             <h6>Não</h6>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box">
-                            <textarea required class="form-check-input position-static" name="blankRadio" id="Q3A1"></textarea>
+                            <textarea required class="form-check-input position-static" form="form-id" name="problema3" id="Q3A1"></textarea>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box">
-                            <textarea required class="form-check-input position-static" name="blankRadio" id="Q4A1"></textarea>
+                            <textarea required class="form-check-input position-static" form="form-id" name="problema4" id="Q4A1"></textarea>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="option-choose-box">
                         <div class="choice-box">
-                            <textarea required class="form-check-input position-static" name="blankRadio" id="Q5A1"></textarea>
+                            <textarea required form="form-id" class="form-check-input position-static" name="problema5" id="Q5A1"></textarea>
                         </div>
                     </div>
                 </div>
@@ -100,9 +100,11 @@
                     <div class="click-advertise">
                         <h1>Agora é só clicar em enviar e terminamos!</h1>
                     </div>
-                    <div class="click-advertise">
-                        <input class="form-check-input position-static" type="text" aria-label="..." placeholder="Nome">
-                        <input class="form-check-input position-static" type="text" aria-label="..." placeholder="Email">
+                    <div class="personal-info-and-submit">
+                        <input required id="nome" class="form-check-input position-static" form="form-id" type="text" name="nome" aria-label="Inserir nome" placeholder="Nome">
+                        <input required id="email" class="form-check-input position-static" form="form-id" type="email" name="email" aria-label="Inserir email" placeholder="Email">
+                        <button id="button-submit" class="btn btn-success position-static" form="form-id" type="submit">ENVIAR</button>
+                        <h3 class="onSuccess">Formulário enviado com sucesso, obrigado por participar \o/</h3>
                     </div>
                 <div>
 
@@ -127,9 +129,11 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/initializeFirebase.js"></script>
+    <script src="js/captureData.js"></script>
 </body>
 </html>
