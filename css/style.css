@@ -133,7 +133,6 @@ body {
     font-weight: bold;
     font-size: 52px;
 }
-/*  Footer da página */
 
 .rodape {
     display: flex;
@@ -141,28 +140,28 @@ body {
     color: #fff;
     list-style: none;
 }
-ul{
+  ul {
     background: #565656;
     color: #fff;
     list-style: none;
-    }
+  }
 
-    span{
-        color: #fff;
-    }
+  span{
+      color: #fff;
+  }
 
-    .icon-facebook-circled {
-        font-size: 40px;
-        color: #fff;
+  .icon-facebook-circled {
+      font-size: 40px;
+      color: #fff;
 
-    }
-    .icon-linkedin-circled {
-        font-size: 40px;
-        color: #fff;
-    }
-    .rede-social {
-       display: inherit;
-    }
-    .copy{
-        margin-top: 25px;
-    }
+  }
+  .icon-linkedin-circled {
+      font-size: 40px;
+      color: #fff;
+  }
+  .rede-social {
+     display: inherit;
+  }
+  .copy{
+      margin-top: 25px;
+  }
