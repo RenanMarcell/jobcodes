@@ -26,11 +26,15 @@ function adicionaDados(event) {
     };
     if (typeLead === 'desenvolvedor'){
         db.ref('/B2C/').push(object);
-        $('#button-submit').prop('disabled', true);
-        $('.onSuccess').css('display', 'block');
+        localStorage.setItem('savedForm', 'true');
+        $('#mce-EMAIL')[0].value = email;
+        $('#mce-NOME')[0].value = nome;
+        $('#mc-embedded-subscribe').click();
     } else {
         db.ref('/B2B/').push(object);
-        $('#button-submit').prop('disabled', true);
-        $('.onSuccess').css('display', 'block');
+        localStorage.setItem('savedForm', 'true');
+        $('#mce-EMAIL')[0].value = email;
+        $('#mce-NOME')[0].value = nome;
+        $('#mc-embedded-subscribe').click();
     }
 }
