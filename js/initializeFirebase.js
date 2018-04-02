@@ -8,8 +8,3 @@ storageBucket: "",
 messagingSenderId: "718610252876"
 };
 firebase.initializeApp(config);
-
-var ip = '';
-$.getJSON('//ipinfo.io/json', function(data) {
-    ip = JSON.parse(JSON.stringify(data, null, 2));
-});

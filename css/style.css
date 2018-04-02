@@ -213,6 +213,10 @@
         margin-top: 25px;
     }
 
+    #mc_embed_signup {
+        display: none;
+    }
+
 }
 
 @media (min-width: 851px) {
@@ -419,5 +423,9 @@
 
     .rodape .copy {
         margin-top: 25px;
+    }
+
+    #mc_embed_signup {
+        display: none;
     }
 }
