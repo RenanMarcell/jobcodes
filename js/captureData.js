@@ -1,7 +1,7 @@
 function adicionaDados(event) {
     event.preventDefault();
     if (ip !== '') {
-        ip = ip['ip'];
+        ip = ip['ip'] || '';
     }
     var data = new Date();
     data = `${data.getFullYear()}-${data.getMonth()+1}-${data.getDate()} ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
