@@ -1,3 +1,9 @@
+var ip = '';
+$.getJSON('//ipinfo.io/json', function(data) {
+    ip = JSON.parse(JSON.stringify(data, null, 2));
+});
+
+
 function adicionaDados(event) {
     event.preventDefault();
     if (ip !== '') {
@@ -28,15 +34,9 @@ function adicionaDados(event) {
     };
     if (typeLead === 'desenvolvedor'){
         db.ref('/B2C/').push(object);
-        localStorage.setItem('savedForm', 'true');
-        $('#mce-EMAIL')[0].value = email;
-        $('#mce-NOME')[0].value = nome;
-        $('#mc-embedded-subscribe').click();
+        $('.onSuccess').css('display', 'block');
     } else {
         db.ref('/B2B/').push(object);
-        localStorage.setItem('savedForm', 'true');
-        $('#mce-EMAIL')[0].value = email;
-        $('#mce-NOME')[0].value = nome;
-        $('#mc-embedded-subscribe').click();
+        $('.onSuccess').css('display', 'block');
     }
 }
