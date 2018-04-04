@@ -34,9 +34,11 @@ function adicionaDados(event) {
     };
     if (typeLead === 'desenvolvedor'){
         db.ref('/B2C/').push(object);
+        $('#button-submit').prop('disabled', true);
         $('.onSuccess').css('display', 'block');
     } else {
         db.ref('/B2B/').push(object);
+        $('#button-submit').prop('disabled', true);
         $('.onSuccess').css('display', 'block');
     }
 }
