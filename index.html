@@ -171,6 +171,15 @@
             min: $.validator.format("Por favor, introduza um valor maior ou igual a {0}.")
         });}(jQuery));var $mcj = jQuery.noConflict(true);
     </script>
+    <script>
+        $('#mc-embedded-subscribe').on('click', function() {
+            setTimeout(function() {
+                if ($('#mce-success-response').css('display') == 'block'){
+                    window.location.replace('https://www.jobcodes.com.br/obrigado.html')
+                }
+            }, 2000);
+        })
+    </script>
 </body>
 
 </html>
