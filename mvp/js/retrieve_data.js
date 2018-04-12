@@ -30,7 +30,7 @@ var remaining_questions = [];
         alert("Tempo esgotado");
         auth().signOut();
         sessionStorage.removeItem('email');
-        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/index.html');
+        window.location.replace('https://www.jobcodes.com.br/mvp');
     }, 600000);
     setTimeout( () => {
         alert("Resta 1 minuto");
