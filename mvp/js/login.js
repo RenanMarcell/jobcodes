@@ -6,6 +6,7 @@ $('#login').click(function() {
         const password = $('#PASSWORD')[0].value;
         const promise = auth.signInWithEmailAndPassword(email, password);
         promise.then(user => {
+            sessionStorage.setItem('email', email);
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
         });
         promise.catch(e => handleErrors(e));
@@ -19,6 +20,7 @@ $('#register').click(function() {
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise.then(user => {
+            sessionStorage.setItem('email', email);
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
         });
         promise.catch(e => handleErrors(e));
