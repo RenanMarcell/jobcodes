@@ -6,7 +6,7 @@
     }
 
     .first-half {
-        background-color: #E5E5E5;
+        background-image: url("../img/BG_1.jpg");
         display: flex;
         padding: 30px 0;
         flex-direction: column;
@@ -14,14 +14,13 @@
     }
 
     .image-div img {
-        height: 120px;
+        height: 130px;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
 
-    .image-div h6 {
-        padding: 0 10px;
-        margin-top: 30px;
+    .image-div h4 {
+        color: white;
         text-align: center;
     }
 
@@ -89,7 +88,7 @@
 
     .first-half {
         width: 50%;
-        background-color: #E5E5E5;
+        background-image: url("../img/BG_1.jpg");
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -102,7 +101,9 @@
         height: 180px;
     }
 
-    .image-div h6 {
+    .image-div h4 {
+        color: white;
+        padding: 0 20%;
         text-align: center;
     }
 
