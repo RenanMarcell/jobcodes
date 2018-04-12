@@ -7,7 +7,7 @@ $('#login').click(function() {
         const promise = auth.signInWithEmailAndPassword(email, password);
         promise.then(user => {
             sessionStorage.setItem('email', email);
-            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
+            window.location.replace('https://www.jobcodes.com.br/mvp/welcome.html')
         });
         promise.catch(e => handleErrors(e));
     }
@@ -21,7 +21,7 @@ $('#register').click(function() {
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise.then(user => {
             sessionStorage.setItem('email', email);
-            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
+            window.location.replace('https://www.jobcodes.com.br/mvp/welcome.html')
         });
         promise.catch(e => handleErrors(e));
 

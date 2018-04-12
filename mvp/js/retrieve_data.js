@@ -108,7 +108,7 @@ $('#Form').submit(function() {
             email: sessionStorage.getItem('email'),
             nivel: nivel
         });
-        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/result.html');
+        window.location.replace('https://www.jobcodes.com.br/mvp/result.html');
     }
     return false;
 });
